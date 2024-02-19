@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* General body styling */
+.body {
+  font-family: Arial, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0; /* Set background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation styling */
+.navi {
+  border-bottom: 2px solid #333; /* Add border to the bottom of the navigation */
+  padding: 10px; /* Add padding */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style-type: none; /* Remove bullet points from list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add right margin to separate items */
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin from the last item */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Set font weight */
+  border-bottom: 2px solid transparent; /* Add transparent border to the bottom of the links */
+}
+
+nav ul li a:hover {
+  border-bottom-color: #ff0; /* Change border color on hover */
+}
+
+/* Container styling */
+.container {
+  max-width: 960px; /* Set maximum width for content */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px; /* Add padding */
+}
+
+/* Sub-container styling */
+/* Sub-container styling */
+.sub-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+  height: 100vh; /* Set height to 100% of viewport height */
+}
+
+/* Audio card styling */
+.audio-card {
+  background-color: #fff; /* Set background color */
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  padding: 20px; /* Add padding */
+  margin-top: 20px; /* Add margin to separate from header */
+}
+
+/* Input container styling */
+.input-container {
+  margin-bottom: 10px; /* Add space between input and playlist */
+}
+
+/* Playlist styling */
+.playlist {
+  max-height: 200px; /* Set max height for playlist */
+  overflow-y: auto; /* Add scrollbar for overflow */
+}
+
+/* Track styling */
+.track {
+  padding: 5px 0; /* Add padding to tracks */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.current-track {
+  font-weight: bold; /* Highlight current track */
+}
+
+/* Now playing styling */
+.now-playing {
+  margin-top: 20px; /* Add space between playlist and now playing */
+}
+
+.track.current-track {
+  background-color: #cce6ff; /* Change to your preferred highlight color */
+}
+
+.now-playing {
+  margin-bottom: 20px; /* Adjust the value as needed */
 }
