@@ -78,17 +78,13 @@ function App() {
 
   return (
     <div className='body'>
-      {/* <div className='navi'>
+      <div className='navi'>
         <header className="header">
-          <nav>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+          <marquee behavior="scroll" direction="left">
+            Basic Music Player created from react framework, add your music and enjoy!
+          </marquee>
         </header>
-      </div> */}
+      </div>
       <div className="sub-container">
         <div className="audio-card">
           <h1>Audio Player</h1>
